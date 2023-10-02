@@ -14,9 +14,9 @@ sybmle = for uniqueness
 */
 let name = "amit";
 let age = 23;
-let isLoggedin = true;
+let isLoggedIn = true;
 let state;
 
 // Object/
 console.log(typeof null); //object type
-console.log(typeof undefined); // undefined
+console.log(typeof undefined); // undefined type
