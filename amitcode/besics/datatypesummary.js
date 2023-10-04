@@ -32,4 +32,30 @@ const myFunction= function(){
     console.log("hello world");
 }
 
-console.log(typeof myhobby);
+// console.log(typeof myhobby);
+
+
+
+// Stack Memory = Premitive datatype
+// heap memory = prefrence datatype
+// stack memory example 
+let myYotubeName = "Uselesstech"
+let anotherName = myYotubeName;
+anotherName = "SundayRoast"
+
+console.log(anotherName);
+console.log(myYotubeName);
+
+// Prefrence Memory Example
+
+let userMitu = {
+    name: "Mitu",
+    age: 25,
+    upiId : "amit@ybl"
+};
+
+let userSumit = userMitu
+userMitu.age = 35
+console.log(userSumit);
+
+// this is the memory type 
