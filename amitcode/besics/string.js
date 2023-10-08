@@ -2,7 +2,7 @@ const name = "amit";
 const age = 23;
 // console.log(name[0]);
 // console.log(name.toUpperCase());
-// console.log(name + age); old comcatinet method
+// console.log(name + age); old concatinet method
 
 // console.log(`my name is amit ${name} and my age ${age}`); // use like mordern style log(` ${}`)
 
