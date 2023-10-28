@@ -46,3 +46,4 @@ for (const key in newsChannel1) {
     console.log(`Channel ${newsChannel1[key]}`);
         
     }
+
