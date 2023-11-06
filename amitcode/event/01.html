@@ -23,8 +23,24 @@ color: rgb(8, 9, 10);">
 <script>
     // document.getElementById('girl').addEventListener('click', ()=> {
     //     alert ('girl is angry')
-    document.getElementById('girl').onclick = function (){
-        alert("girl is angry")
-    }
+    // document.getElementById('girl').onclick = function (){
+    //     alert("girl is angry")
+    // }
+
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.parentNode);
+    // let removeIMG = e.target.parentNode
+    // removeIMG.remove()
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        if (e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+            let removeIMG = e.target.parentNode
+            removeIMG.remove()
+        }
+        
+    })
 </script>
 </html>
