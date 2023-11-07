@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleseet.css">
+    <title>Amit space</title>
+</head>
+<body id="body" style="background-color: rgb(255, 172, 172); color: aliceblue;">
+    <h1>amit sharma</h1>
+    <h2> new world </h2>
+    <div class="card">
+        <img class="img" src="" alt="John" style="width:100%">
+        <h1>John Doe</h1>
+        <p>Harvard University</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <p><button>Contact</button></p>
+      </div>
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/AmitSharma-HSR'
+const xhl = new XMLHttpRequest();
+xhl.open('get', requesturl)
+xhl.onreadystatechange = function (){
+    console.log(xhl.readyState)
+    if(xhl.readyState === 4) {
+        const data = JSON.parse(this.responseText)
+        console.log(data);
+        let card = document.querySelector('.card')
+
+        if(card) {
+            const cardImage = card.querySelector('.img')
+
+            const mySelf = card.querySelector('h1')
+
+            const univercity = card.querySelector('p')
+            
+            if ( cardImage && mySelf && univercity) {
+                cardImage.src = data.avatar_url;
+                
+                mySelf.textContent = data.login
+
+                univercity.innerHTML = 'Haryana Univercity'
+            }
+        } 
+
+        // document.getElementById('body').appendChild(img)
+    }
+}
+xhl.send()
+
+</script>
+</html>
