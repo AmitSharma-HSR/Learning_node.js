@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactBind</title>
+</head>
+<body>
+    <button> button clicked</button>
+    <img src="https://www.racksolutions.com/news//app/uploads/AdobeStock_90603827-1024x576.jpeg" alt="server image" width="600" height="500">
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = "library"
+            this.server = "https://localhost:3000"
+
+            document.querySelector('button')
+            .addEventListener('click', this.handleClick.bind(this))
+        }
+        handleClick(){
+            console.log("button clicked");
+            console.log(this.server);
+        }
+        showImage
+    }
+    const app = new React()
+</script>
+</html>

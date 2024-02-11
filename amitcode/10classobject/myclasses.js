@@ -32,3 +32,4 @@ function User(username, email, password){
 const Rohit = new User ("rohit", "amit@gmail.com", "123")
 console.log(Rohit.passwordEncycrpted());
 console.log(Rohit.changeUsername());
+
